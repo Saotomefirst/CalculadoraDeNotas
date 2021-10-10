@@ -1,4 +1,4 @@
-package com.example.hellokotlinjamile
+package com.example.CalculadoraDeNotas
 
 import org.junit.Test
 
