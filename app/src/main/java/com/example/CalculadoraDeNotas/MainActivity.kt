@@ -1,5 +1,6 @@
 package com.example.CalculadoraDeNotas
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -22,12 +23,15 @@ class MainActivity : AppCompatActivity() {
 
             if (faltas > 10) {
                 resultado.setText("Aluno Reprovado por Faltas" + "\n" + "Nota Final: $media" + "\n" + "Faltas: $faltas")
+                resultado.setTextColor(Color.RED)
             }
             else if (media >= 6) {
                 resultado.setText("Aluno Aprovado" + "\n" + "Nota Final: $media" + "\n" + "Faltas: $faltas")
+                resultado.setTextColor(Color.GREEN)
             }
             else {
                 resultado.setText("Aluno Reprovado por Nota" + "\n" + "Nota Final: $media" + "\n" + "Faltas: $faltas")
+                resultado.setTextColor(Color.RED)
             }
 
         }
